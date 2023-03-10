@@ -44,3 +44,25 @@ To use the application, navigate to the local URL provided by the development se
 ## Contributing
 
 Contributions to this project are welcome. If you find any issues or have any suggestions, please feel free to raise a pull request or open an issue.
+
+## Screenshots
+
+![ojash1](https://user-images.githubusercontent.com/58855711/224266863-d15f7f19-7247-4941-af3e-ba47211704e4.jpg)
+
+![ojash2](https://user-images.githubusercontent.com/58855711/224266880-360bf35a-fccd-4652-bfdf-2d4c88a197a9.jpg)
+
+![ojash3](https://user-images.githubusercontent.com/58855711/224266903-1144b346-f207-4585-bf5c-c2c876e960a3.jpg)
+
+![ojash4](https://user-images.githubusercontent.com/58855711/224266913-abbfe8a9-a136-4072-a941-af6d3abdf468.jpg)
+
+![ojash5](https://user-images.githubusercontent.com/58855711/224266926-8abaad69-d010-4170-8a71-a60e2569ff57.jpg)
+
+![ojash6](https://user-images.githubusercontent.com/58855711/224266947-797dc6a4-f017-466f-8205-77fa7e6b24fc.jpg)
+
+![ojash7](https://user-images.githubusercontent.com/58855711/224266996-838609f0-9916-43d1-8e36-9e4f28e94c0a.jpg)
+
+![ojash8](https://user-images.githubusercontent.com/58855711/224267007-191da796-44de-42f1-9ec6-2d278c99d8e8.jpg)
+
+![ojash9](https://user-images.githubusercontent.com/58855711/224267031-97669475-9134-448a-bed2-0c1119b2d89a.jpg)
+
+![ojash10](https://user-images.githubusercontent.com/58855711/224267046-c508660e-f29d-491d-b3a4-412cccfaa746.jpg)
