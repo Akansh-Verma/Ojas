@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diet Chart</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link href="https://css.gg/menu.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap");
+
+      body {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/396/282/original/vector-abstract-bokeh-blurred-lights-wallpaper.jpg");
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Roboto", sans-serif;
+      }
+
+      :root {
+        --main-color: #f73471;
+        --black: #000;
+        --light-color: #868e96;
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        text-decoration: capitalize;
+        transition: all 0.2s linear;
+      }
+      ::selection {
+        background: var(--main-color);
+        color: #fff;
+      }
+      html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scroll-padding-top: 7rem;
+      }
+      html::-webkit-scrollbar {
+        width: 1rem;
+      }
+      html::-webkit-scrollbar-track {
+        background: #fafafa;
+      }
+      html::-webkit-scrollbar-thumb {
+        background: var(--main-color);
+        border-radius: 5rem;
+      }
+      section {
+        padding: 2rem 9%;
+      }
+      .heading {
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        color: var(--orange);
+        text-transform: uppercase;
+      }
+      .heading span {
+        text-transform: uppercase;
+        color: orange;
+      }
+      .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 0.8rem 3rem;
+        background: #fff;
+        font-weight: 500;
+        cursor: pointer;
+        color: red;
+        font-size: 1.7rem;
+      }
+      .bit:hover {
+        background: orange;
+        color: orange;
+        letter-spacing: 0.1rem;
+      }
+      nav{
+			background: #0082e6;
+			height: 80px;
+			width: 100%;
+		}
+		label.logo{
+			color: white;
+			font-size: 35px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+		}
+		nav ul li a{
+			color: white;
+			font-size: 17px;
+			padding: 7px 13px;
+			border-radius: 3px;
+			text-transform: uppercase;
+		}
+		a.active,a:hover{
+			background: #1b9bff;
+			transition: .5s;
+		}
+		.checkbtn{
+			font-size: 30px;
+			color: white;
+			float: right;
+			line-height: 80px;
+			margin-right: 40px;
+			cursor: pointer;
+			display: none;
+		}
+		#check{
+			display: none;
+		}
+		@media(max-width: 952px){
+			label.logo{
+				font-size: 30px;
+				padding-left: 50px;
+			}
+			navbar ul li a{
+				font-size: 16px;
+			}
+		}
+		@media(max-width: 858px){
+			.checkbtn{
+				display: block;
+			}
+			ul{
+				position: fixed;
+				width: 100%;
+				height: 100vh;
+				background: #000000;
+				top: 80px;
+				left: -100%;
+				text-align: center;
+				transition: all	 .5s;
+			}
+			nav ul li{
+				display: block;
+				margin: 50px 0;
+				line-height: 30px;
+			}
+			nav ul li a{
+				font-size: 20px;
+			}
+			a:hover,a.active{
+				background: none;
+				color: #0082e6;
+			}
+			#check:checked~ul{
+				left: 0;
+			}
+		}
+    .nav-user {
+      color: #eee;
+      text-transform: uppercase;
+      font-size: 17px;
+    }
+
+      .footer {
+        background: black;
+      }
+      .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        gap: 1.5rem;
+      }
+      .footer .box-container .box {
+        padding: 2rem;
+      }
+      .footer .box-container .box h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 600;
+        padding-bottom: 1rem;
+      }
+      .footer .box-container .box .text {
+        color: #eee;
+        font-size: 1.3rem;
+        font-weight: normal;
+        line-height: 1.8;
+        padding-bottom: 1rem;
+      }
+      .footer .box-container .box .icons {
+        padding: 1rem 0;
+      }
+      .footer .box-container .box .icon a i {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        background: var(--main-color);
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+        color: #fff;
+      }
+      .footer .box-container .box .icon a i:hover {
+        color: var(--main-color);
+        background: none;
+        border: 0.2rem solid var(--main-color);
+      }
+      .footer .box-container .box .icons a {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 1.5rem;
+      }
+      .footer .box-container .box .icons a i {
+        margin-right: 0.5rem;
+        color: var(--main-color);
+      }
+      .footer .box-container .box .icons a i:hover {
+        padding-right: 2rem;
+        color: #fff;
+      }
+      .footer .box-container .box .icons a:hover {
+        color: var(--main-color);
+      }
+      .footer .credit {
+        padding: 3rem 0;
+        text-align: center;
+        border-top: 0.1rem solid #808080;
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #eee;
+      }
+      .footer.credit span {
+        color: var(--main-color);
+      }
+      a:hover,a.active{
+				background: none;
+				
+			}
+      h1 {
+        font-size: 30px;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 20px;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      table {
+        width: 100%;
+        table-layout: fixed;
+        margin: 10px;
+      }
+      .tbl-header {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      .tbl-content {
+        height: 300px;
+        overflow-x: auto;
+        margin-top: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      th {
+        padding: 20px 15px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 25px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 25px;
+        color: black;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars "></i>
+			</label>
+			<label class="logo">OJAS</label>
+			<ul>
+				<li><a class="active" href="/">Home</a></li>
+        {% if user.is_authenticated%}
+          <li class = "nav-item nav-link nav-user"> Hello, {{user.username}} </li>
+          <li class="nav-item"><a class="nav-link"href="/logout">Logout</a></li>
+          {% else %}
+          <li class="nav-item "><a class="nav-link"  href="/register">Register</a></li>
+          <li class="nav-item"><a class="nav-link"href="/login">Login</a></li>
+          {% endif %}
+				<li><a href="https://discord.gg/ewKGTeA8">Chat Room</a></li>
+        <li><a href="/wellbeing">Wellbeing</a></li>
+
+			</ul>
+		</nav>
+
+    <section class="mt-10">
+      <!-- <div class="container">
+      <h3>Protein Fat Carb Ratio
+When eaten in the right ratios, these three macronutrients can improve your weight, health and overall physical well-being. In general, most adults should target their diets to comprise of 45-65% Carbohydrates, 10-35% Protein and 20-35% Fat.</h3>
+    </div> -->
+      <h1>NON VEGETARIAN</h1>
+      <div class="tbl-header mt-3">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>DAYS</th>
+              <th>BREAKFAST</th>
+              <th>LUNCH</th>
+              <th>DINNER</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              {% for m in n_monday %}
+              <td>{{m}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              {% for t in n_tuesday %}
+              <td>{{t}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              {% for w in n_wednesday %}
+              <td>{{w}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              {% for th in n_thursday %}
+              <td>{{th}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              {% for f in n_friday %}
+              <td>{{f}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              {% for s in n_saturday %}
+              <td>{{s}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              {% for su in n_sunday %}
+              <td>{{su}}</td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <!--for demo wrap-->
+      <h1>VEGETARIAN</h1>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr>
+              <th>DAYS</th>
+              <th>BREAKFAST</th>
+              <th>LUNCH</th>
+              <th>DINNER</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <th scope="row">Monday</th>
+              {% for m in monday %}
+              <td>{{m}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              {% for t in tuesday %}
+              <td>{{t}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              {% for w in wednesday %}
+              <td>{{w}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              {% for th in thursday %}
+              <td>{{th}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              {% for f in friday %}
+              <td>{{f}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              {% for s in saturday %}
+              <td>{{s}}</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              {% for su in sunday %}
+              <td>{{su}}</td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h1>About</h1>
+          <div class="text">
+            <p>
+              Health is the biggest wealth. It helps us to enjoy all the little
+              things in life. If one is not healthy, they fail to feel happy.
+              Being unhappy can impact the health of people around us too. In
+              order to be truly healthy, one must eat well, sleep on time and
+              wake up early. Our Team Ojas has build this beautiful website to
+              encourage users to stay fit and healthy !!
+            </p>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1>Contact Info</h1>
+          <div class="icons">
+            <a href="#"
+              ><i class="fas fa-map-marker-alt">
+                8, Nawab Yusuf Road, Civil Lines, Prayagraj</i
+              ></a
+            >
+            <a href="#"><i class="fas fa-phone-alt"> +91 7525810227</i></a>
+            <a href="#"
+              ><i class="fas fa-envelope"> aviralmehra08@gmail.com</i></a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <h1>Quick Links</h1>
+          <div class="icons">
+            <a href="#">Home</a>
+            <a href="#">Workout</a>
+            <a href="#">DietPlans</a>
+            <!-- <a href="#">Influencers</a> -->
+            <a href="#">Mental Welbeing</a>
+          </div>
+        </div>
+      </div>
+      <div class="credit">
+        Created By<span> Team Pioneers</span> ! All Rights Reserved
+      </div>
+    </section>
+  </body>
+</html>

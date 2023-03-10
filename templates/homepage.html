@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+            <img src="images/logo.png" height="100" alt="CoolBrand">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <!-- <div class="banner-image d-flex justify-content-center align-items-center">
+    </div> -->
+
+    <section id="home" class="home">
+            <div class="content">
+              <h3>Never Give Up</h3>
+              <p>“The secret of getting ahead is getting started.” -Mark Twain</p>
+              <div class="button">
+                <!-- <a href="#" class="btn btn-1">Get Started</a> -->
+              </div>
+            </div>         
+    </section>
+    
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/Xo9kYJn5HXQ?controls=0&autoplay=1&mute=0"></iframe>
+    </div>
+    
+    <section class="primaryCTA">
+      <div class="row">
+        <div class="col-md-4 col-sm-2">
+          <div class="example-1 card mt-5">
+          <div class="wrapper">
+            <div class="date">
+              <span class="day">12</span>
+              <span class="month">Aug</span>
+              <span class="year">2016</span>
+            </div>
+            <div class="data">
+              <div class="content">
+                <span class="author">Jane Doe</span>
+                <h1 class="title"><a href="#">Boxing icon has the will for a couple more fights</a></h1>
+                <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+                <label for="show-menu" class="menu-button"><span></span></label>
+              </div>
+              <input type="checkbox" id="show-menu" />
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="fa fa-bookmark-o"></a>
+                </li>
+                <li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
+                <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <div class="example-2 card mt-5 ">
+          <div class="wrapper">
+            <div class="header">
+              <div class="date">
+                <span class="day">12</span>
+                <span class="month">Aug</span>
+                <span class="year">2016</span>
+              </div>
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="fa fa-bookmark-o"></a>
+                </li>
+                <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
+                <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
+              </ul>
+            </div>
+            <div class="data">
+              <div class="content">
+                <span class="author">Jane Doe</span>
+                <h1 class="title"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
+                <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+                <a href="#" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <div class="example-3 card mt-5 ">
+          <div class="wrapper">
+            <div class="date">
+              <span class="day">12</span>
+              <span class="month">Aug</span>
+              <span class="year">2016</span>
+            </div>
+            <div class="data">
+              <div class="content">
+                <span class="author">Jane Doe</span>
+                <h1 class="title"><a href="#">Boxing icon has the will for a couple more fights</a></h1>
+                <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+                <label for="show-menu" class="menu-button"><span></span></label>
+              </div>
+              <input type="checkbox" id="show-menu" />
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="fa fa-bookmark-o"></a>
+                </li>
+                <li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
+                <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>       
+    </section>
+
+    <section class="social-proof">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="benefits">
+      <div class='title'>
+        <p>Lorem ipsum</p>
+        <p class="name">Lorem ipsum</p>
+      </div>
+      <svg class='container' width="529px" height="286px" viewBox="30 27 529 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch 
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="graph-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 27.000000)">
+          <g id="y_axis" font-size="11.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#FFFFFF" opacity="0.4" font-weight="normal">
+            <text id="0">
+              <tspan x="25.3008249" y="264.333333">0</tspan>
+            </text>
+            <text id="200">
+              <tspan x="12.7757572" y="232.666667">200</tspan>
+            </text>
+            <text id="400">
+              <tspan x="12.7757572" y="201">400</tspan>
+            </text>
+            <text id="600">
+              <tspan x="12.7757572" y="169.333333">600</tspan>
+            </text>
+            <text id="800">
+              <tspan x="12.7757572" y="137.666667">800</tspan>
+            </text>
+            <text id="1000">
+              <tspan x="6.51322328" y="106">1000</tspan>
+            </text>
+            <text id="1200">
+              <tspan x="6.51322328" y="74.3333333">1200</tspan>
+            </text>
+            <text id="1400">
+              <tspan x="6.51322328" y="42.6666667">1400</tspan>
+            </text>
+            <text id="1600">
+              <tspan x="6.51322328" y="11">1600</tspan>
+            </text>
+          </g>
+          <g id="GRAPHS" transform="translate(64.000000, 16.000000)" stroke-linecap="round" stroke-width="8" stroke-linejoin="round">
+            <polyline id="Banks" stroke="#5BCAC1" points="0 1 88.0438662 1 128.985782 137 180.170616 137 224.189573 182 256.947867 91 301.990521 137 346.009479 91 392.087202 91 429.952607 179"></polyline>
+            <polyline id="Bridge" stroke="#81DEFF" points="2.04739336 183 54.2559242 227 96.2274882 47 133.080569 1 302.018438 1 346.680361 44.6280822 386.957346 0 427.905213 43"></polyline>
+            <polyline id="PayPal" stroke="#F6F5A6" points="2.04739336 180 53.273159 180 99.2985782 91 137.175355 47 219.077488 47 256.947867 90 301.990521 47 349.080569 137 398.228672 137 432 91"></polyline>
+          </g>
+          <g id="x_axis" transform="translate(71.974046, 271.541667)" font-size="11.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#FFFFFF" opacity="0.4" font-weight="normal">
+            <text id="1">
+              <tspan x="0.396183206" y="11">1</tspan>
+            </text>
+            <text id="2">
+              <tspan x="39.2603361" y="11">2</tspan>
+            </text>
+            <text id="3">
+              <tspan x="78.8786567" y="11">3</tspan>
+            </text>
+            <text id="4">
+              <tspan x="118.496977" y="11">4</tspan>
+            </text>
+            <text id="5">
+              <tspan x="158.115298" y="11">5</tspan>
+            </text>
+            <text id="6">
+              <tspan x="197.733619" y="11">6</tspan>
+            </text>
+            <text id="7">
+              <tspan x="237.351939" y="11">7</tspan>
+            </text>
+            <text id="8">
+              <tspan x="276.97026" y="11">8</tspan>
+            </text>
+            <text id="9">
+              <tspan x="316.58858" y="11">9</tspan>
+            </text>
+            <text id="10">
+              <tspan x="359.229833" y="11">10</tspan>
+            </text>
+            <text id="11">
+              <tspan x="400.036703" y="11">11</tspan>
+            </text>
+            <text id="12">
+              <tspan x="438.466474" y="11">12</tspan>
+            </text>
+          </g>
+          <g id="grid" transform="translate(46.618321, 4.750000)" stroke="#FFFFFF" stroke-linecap="square" opacity="0.0800000057">
+            <path d="M0.396183206,1.1875 L478.991396,1.1875" id="Line"></path>
+            <path d="M0.396183206,32.8541667 L478.991396,32.8541667" id="Line"></path>
+            <path d="M0.396183206,64.5208333 L478.991396,64.5208333" id="Line"></path>
+            <path d="M0.396183206,96.1875 L478.991396,96.1875" id="Line"></path>
+            <path d="M0.396183206,127.854167 L478.991396,127.854167" id="Line"></path>
+            <path d="M0.396183206,159.520833 L478.991396,159.520833" id="Line"></path>
+            <path d="M0.396183206,191.1875 L478.991396,191.1875" id="Line"></path>
+            <path d="M0.396183206,222.854167 L478.991396,222.854167" id="Line"></path>
+            <path d="M0.396183206,254.520833 L478.991396,254.520833" id="Line"></path>
+          </g>
+        </g>
+      </svg>
+
+      
+    </section> 
+  -->
+    <section class="contents">
+      
+    </section>
+
+    <div class="jumbotron">
+      <h1>lorem ipsum</h1>
+      <div>Lorem ipsum</div>
+    </div>
+    <div class="jumbotron">
+      <h1>lorem ipsum</h1>
+      <div>Lorem ipsum</div>
+    </div>
+    <div class="jumbotron">
+      <h1>lorem ipsum</h1>
+      <div>Lorem ipsum</div>
+    </div>
+    <div class="jumbotron">
+      <h1>lorem ipsum</h1>
+      <div>Lorem ipsum</div>
+    </div>
+    
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>@2022 Ojas | All Rights Reserved</p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
